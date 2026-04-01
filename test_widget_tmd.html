@@ -1,0 +1,25 @@
+<html>
+<head>
+<title>Test widget TMD</title>
+
+<script src="https://elixir-europe-training.github.io/Training-Metrics-Database-widget/widget.js"></script>
+<script>
+  TMDWidget({
+    container: '#tmd-widget-container',
+    questions: [quality-course_rating],
+  }).catch((error) => {
+    console.error('TMDWidget failed to initialise', error);
+  });
+</script>
+
+</head>
+
+<body>
+<b><font face="verdana, geneva, arial, sans-serif" size=+3>Test widget TMD</font></b>
+
+<hr color="#666666" size=1>
+
+<div class="tmd-widget" id="tmd-widget-container"></div>
+
+<body/>
+</html>
